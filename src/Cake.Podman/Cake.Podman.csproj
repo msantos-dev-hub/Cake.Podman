@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <AssemblyName>Cake.Podman</AssemblyName>
+    <RootNamespace>Cake.Podman</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	
+    <PackageId>Cake.Podman</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Michel Santos</Authors>
+    <Company>Michel Santos</Company>
+    <Description>Podman addin for Cake.</Description>
+    <PackageTags>cake;build;podman;cake-build;cake-addin</PackageTags>
+    <RepositoryUrl>https://github.com/msantos-dev-hub/Cake.Podman</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/addin/cake-contrib-addin-medium.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+    <PackageReference Include="Cake.Core" Version="5.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

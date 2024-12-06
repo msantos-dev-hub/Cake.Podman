@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{717F9212-CA00-4B68-ABF0-E2AD41BB1161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Podman", "src\Cake.Podman\Cake.Podman.csproj", "{792AF3BE-99A3-4C13-9691-0AB1CEC76689}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{347D1EDF-9F76-4AE9-9082-6CBE7AEE82E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Podman.Tests", "test\Cake.Podman.Tests\Cake.Podman.Tests.csproj", "{6E429CE0-84D1-4949-9759-20981C24A2A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{792AF3BE-99A3-4C13-9691-0AB1CEC76689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792AF3BE-99A3-4C13-9691-0AB1CEC76689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792AF3BE-99A3-4C13-9691-0AB1CEC76689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792AF3BE-99A3-4C13-9691-0AB1CEC76689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E429CE0-84D1-4949-9759-20981C24A2A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E429CE0-84D1-4949-9759-20981C24A2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E429CE0-84D1-4949-9759-20981C24A2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E429CE0-84D1-4949-9759-20981C24A2A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B554FF9-0E2F-46BE-860E-637E78913C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B554FF9-0E2F-46BE-860E-637E78913C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B554FF9-0E2F-46BE-860E-637E78913C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B554FF9-0E2F-46BE-860E-637E78913C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{792AF3BE-99A3-4C13-9691-0AB1CEC76689} = {717F9212-CA00-4B68-ABF0-E2AD41BB1161}
+		{6E429CE0-84D1-4949-9759-20981C24A2A2} = {347D1EDF-9F76-4AE9-9082-6CBE7AEE82E5}
+	EndGlobalSection
+EndGlobal
