@@ -6,13 +6,13 @@
     <RootNamespace>Cake.Podman</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
 	
     <PackageId>Cake.Podman</PackageId>
     <Version>1.0.0</Version>
     <Authors>Michel Santos</Authors>
     <Company>Michel Santos</Company>
-    <Description>Podman addin for Cake.</Description>
+    <Description>Podman addin for Cake</Description>
     <PackageTags>cake;build;podman;cake-build;cake-addin</PackageTags>
     <RepositoryUrl>https://github.com/msantos-dev-hub/Cake.Podman</RepositoryUrl>
     <PackageIcon>icon.png</PackageIcon>

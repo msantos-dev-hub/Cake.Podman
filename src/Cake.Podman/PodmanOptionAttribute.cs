@@ -1,4 +1,5 @@
-﻿namespace Cake.Podman;
+﻿#nullable enable
+namespace Cake.Podman;
 
 /// <summary>
 /// Attribute used for PodmanOptions properties

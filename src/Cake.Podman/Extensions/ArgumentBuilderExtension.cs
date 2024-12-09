@@ -1,4 +1,5 @@
-﻿using Cake.Core.IO;
+﻿#nullable enable
+using Cake.Core.IO;
 using Cake.Core;
 using System.Reflection;
 using System.Linq;
@@ -68,25 +69,6 @@ public static class ArgumentBuilderExtension
                         .Append(GetOptionArgument(property, options));
                 }
 
-                // var argument = GetOptionArgument(property, optionAttribute, options);
-                // if (argument != null)
-                // {
-                //     if (optionAttribute.Quoted)
-                //     {
-                //         builder
-                //             .Append(GetOptionName(optionAttribute))
-                //             .AppendQuoted(argument);
-                //     } else if (optionAttribute.Secret)
-                //     {
-                //         builder
-                //             .Append(GetOptionName(optionAttribute))
-                //             .AppendSecret(argument);
-                //     } else {
-                //         builder
-                //             .Append(GetOptionName(optionAttribute))
-                //             .Append(argument);                        
-                //     }
-                // }
             }
 
 
@@ -154,63 +136,11 @@ public static class ArgumentBuilderExtension
         }
     }
 
-    // private static string? GetOptionArgument<TOptions>(PropertyInfo property, PodmanOptionAttribute optionAttribute, TOptions options) where TOptions : PodmanOptions, new()
-    // {
-    //     if (property.PropertyType == typeof(bool))
-    //     {
-    //         return GetArgument(optionAttribute, (bool)property.GetValue(options)!);
-    //     }
-    //     else if (property.PropertyType == typeof(bool?))
-    //     {
-    //         return GetArgument(optionAttribute, (bool?)property.GetValue(options));
-    //     }
-    //     else if (property.PropertyType == typeof(int))
-    //     {
-    //         return GetArgument(optionAttribute, (int)property.GetValue(options)!);
-    //     }
-    //     else if (property.PropertyType == typeof(int?))
-    //     {
-    //         return GetArgument(optionAttribute, (int?)property.GetValue(options));
-    //     }
-    //     else if (property.PropertyType == typeof(Int64))
-    //     {
-    //         return GetArgument(optionAttribute, (Int64)property.GetValue(options)!);
-    //     }
-    //     else if (property.PropertyType == typeof(Int64?))
-    //     {
-    //         return GetArgument(optionAttribute, (Int64?)property.GetValue(options));
-    //     }
-    //     else if (property.PropertyType == typeof(string))
-    //     {
-    //         return GetArgument(optionAttribute, (string)property.GetValue(options)!);
-    //     }
-    //     else if (property.PropertyType == typeof(string[]))
-    //     {
-    //         if (optionAttribute.Format == FormatType.Multiple)
-    //         {
-    //             return string.Join(" ", ((string[])property.GetValue(options)!).ToList().Select(a => GetArgument(optionAttribute, a)));
-    //         }
-    //         else
-    //         {
-    //             return GetArgument(optionAttribute, string.Join(",", (string[])property.GetValue(options)!));
-    //         }
-    //     }
-    //     else
-    //     {
-    //         throw new NotImplementedException($"Property type not implemented: {property.Name}");
-    //     }
-    // }
-
     private static PodmanOptionAttribute? GetOptionAttribute(PropertyInfo property) => property.GetCustomAttribute<PodmanOptionAttribute>();
 
     private static string GetOptionName(PodmanOptionAttribute optionAttribute) => $"--{optionAttribute.Name}";
-    // private static string? GetArgument(PodmanOptionAttribute optionAttribute, string? value) => !string.IsNullOrEmpty(value) ? optionAttribute.Quoted ? $"{GetOptionName(optionAttribute)}  \"{value}\"" : $"{GetOptionName(optionAttribute)} {value}" : null;
-    // private static string? GetArgument(PodmanOptionAttribute optionAttribute, bool? value) => value.HasValue ? $"{GetOptionName(optionAttribute)}={value.Value.ToString().ToLower()}" : null;
-    // private static string? GetArgument(PodmanOptionAttribute optionAttribute, int? value) => value.HasValue ? $"{GetOptionName(optionAttribute)} {value.Value}" : null;
-    // private static string? GetArgument(PodmanOptionAttribute optionAttribute, Int64? value) => value.HasValue ? $"{GetOptionName(optionAttribute)} {value.Value}" : null;
 
     private static string? GetArgument(string? value) => !string.IsNullOrEmpty(value) ? value : null;
-    //private static string? GetArgument(bool? value) => value.HasValue ? $"={value.Value.ToString().ToLower()}" : null;
     private static string? GetArgument(bool? value) => null;
     private static string? GetArgument(int? value) => value.HasValue ? value.Value.ToString() : null;
     private static string? GetArgument(Int64? value) => value.HasValue ? value.Value.ToString() : null;

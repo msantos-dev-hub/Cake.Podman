@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using Cake.Core;
 using Cake.Podman.Commands.Image.Push;

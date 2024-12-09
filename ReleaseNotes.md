@@ -1,0 +1,33 @@
+#Release Notes
+
+## 1.0.0
+- Added [Podman Build](https://docs.podman.io/en/latest/markdown/podman-build.1.html) command.
+- Added [Podman Container Cp](https://docs.podman.io/en/latest/markdown/podman-cp.1.html) command.
+- Added [Podman Container Create](https://docs.podman.io/en/latest/markdown/podman-create.1.html) command.
+- Added [Podman Container Exec](https://docs.podman.io/en/latest/markdown/podman-exec.1.html) command.
+- Added [Podman Container Inspect](https://docs.podman.io/en/latest/markdown/podman-container-inspect.1.html) command.
+- Added [Podman Container List](https://docs.podman.io/en/latest/markdown/podman-ps.1.html) command.
+- Added [Podman Container Logs](https://docs.podman.io/en/latest/markdown/podman-logs.1.html) command.
+- Added [Podman Container Rm](https://docs.podman.io/en/latest/markdown/podman-rm.1.html) command.
+- Added [Podman Container Run](https://docs.podman.io/en/latest/markdown/podman-run.1.html) command.
+- Added [Podman Container Start](https://docs.podman.io/en/latest/markdown/podman-start.1.html) command.
+- Added [Podman Container Stop](https://docs.podman.io/en/latest/markdown/podman-stop.1.html) command.
+- Added [Podman Image Inspect](https://docs.podman.io/en/latest/markdown/podman-image-inspect.1.html) command.
+- Added [Podman Image List](https://docs.podman.io/en/latest/markdown/podman-images.1.html) command.
+- Added [Podman Image Load](https://docs.podman.io/en/latest/markdown/podman-load.1.html) command.
+- Added [Podman Image Prune](https://docs.podman.io/en/latest/markdown/podman-image-prune.1.html) command.
+- Added [Podman Image Pull](https://docs.podman.io/en/latest/markdown/podman-pull.1.html) command.
+- Added [Podmam Image Push](https://docs.podman.io/en/latest/markdown/podman-push.1.html) command.
+- Added [Podman Image Rm](https://docs.podman.io/en/latest/markdown/podman-rmi.1.html) command.
+- Added [Podman Image Save](https://docs.podman.io/en/latest/markdown/podman-save.1.html) command.
+- Added [Podman Image Tag](https://docs.podman.io/en/latest/markdown/podman-tag.1.html) command.
+- Added [Podman Login](https://docs.podman.io/en/latest/markdown/podman-login.1.html) command.
+- Added [Podman Logout](https://docs.podman.io/en/latest/markdown/podman-logout.1.html) command.
+- Added [Podman Network Connect](https://docs.podman.io/en/latest/markdown/podman-network-connect.1.html) command.
+- Added [Podman Network Create](https://docs.podman.io/en/latest/markdown/podman-network-create.1.html) command.
+- Added [Podman Network Disconnect](https://docs.podman.io/en/latest/markdown/podman-network-disconnect.1.html) command.
+- Added [Podman Network Rm](https://docs.podman.io/en/latest/markdown/podman-network-rm.1.html) command.
+- Added [Podman Volume Create](https://docs.podman.io/en/latest/markdown/podman-volume-create.1.html) command.
+- Added [Podman Volume Inspect](https://docs.podman.io/en/latest/markdown/podman-volume-inspect.1.html) command.
+- Added [Podman Volume List](https://docs.podman.io/en/latest/markdown/podman-volume-ls.1.html) command.
+- Added [Podman Volume Rm](https://docs.podman.io/en/latest/markdown/podman-volume-rm.1.html) command.

@@ -1,4 +1,5 @@
-﻿using Cake.Core.Tooling;
+﻿#nullable enable
+using Cake.Core.Tooling;
 
 namespace Cake.Podman;
 
